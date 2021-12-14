@@ -1,0 +1,56 @@
+.username {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    border: transparent;
+    box-shadow: 0px -3px 0 -2px black inset;
+
+    grid-area: username;
+}
+
+.password {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    border: transparent;
+    box-shadow: 0px -3px 0 -2px black inset;
+
+    grid-area: password;
+}
+
+.retrieve {
+    font-family: 'Open Sans', sans-serif;
+    align-self: flex-start;
+    margin: 10px;
+
+    background-color: transparent;
+    border: transparent;
+
+    grid-area: retrieve;
+}
+
+.login {
+    font-family: 'Alfa Slab One', sans-serif;
+    border-radius: 35px;
+    border: transparent;
+
+    grid-area: login;
+}
+
+.email {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    border: transparent;
+    box-shadow: 0px -3px 0 -2px black inset;
+    height: 70px;
+
+    grid-area: email;
+}
+
+.confirmpassword {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    border: transparent;
+    box-shadow: 0px -3px 0 -2px black inset;
+    height: 70px;
+
+    grid-area: confirm;
+}
