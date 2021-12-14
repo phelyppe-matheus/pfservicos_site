@@ -1,0 +1,98 @@
+.Container {
+    display: flex;
+    align-content: stretch;
+    height: 100vh;
+
+    .SideBar {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 12vw;
+        height: 100vh;
+        background-color: #3C373D;
+
+        .Logo {
+            margin: 2vw;
+            font-size: 8vw;
+            color: #fff;
+        }
+
+        .Sair {
+            margin-top: auto;
+            color: #fff;
+            background: transparent;
+            border: hidden;
+            margin-bottom: 2rem;
+            font-size: 1.63rem;
+            font-family: 'Alfa Slab One', sans-serif;
+        }
+    }
+
+    .PedidosContainer {
+        width: 50vw;
+        z-index: 1;
+
+        padding: 2rem;
+        margin-left: 12vw;
+    }
+
+    .PedidoForm {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+
+        width: 38vw;
+        padding: 4rem 4rem 4rem 20rem;
+        margin-top: auto;
+
+        background-color: #A1AFB0;
+
+        .SectionTitle {
+            margin: 3vh 0;
+            font-size: 3vh;
+
+            font-weight: 800;
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+        }
+
+        .FieldTitle {
+            flex-grow: 1;
+            font-size: 2vh;
+
+            font-weight: 400;
+            font-family: 'Open Sans', sans-serif;
+            .Field {
+                height: 5vh;
+                width: 100%;
+                border: hidden;
+
+                margin: 0.5vh 0;
+            }
+        }
+
+        .Submit {
+            height: 4em;
+            width: 100%;
+
+            background-color: #646E78;
+            border: hidden;
+            font-size: 2vh;
+            font-weight: 800;
+            font-family: 'Open Sans', sans-serif;
+
+            margin-top: 4rem;
+        }
+
+    }
+}
+
+@media (max-height: 1000px) {
+    .Container {
+        .PedidoForm {
+            margin-top: 0px;
+        }
+    }
+}
