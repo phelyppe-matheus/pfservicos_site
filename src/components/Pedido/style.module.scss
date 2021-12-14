@@ -1,0 +1,138 @@
+.Pedido {
+    margin-right: -15rem;
+
+    .Identification {
+        font-weight: 800;
+        font-size: 1.63rem;
+        font-family: 'Open Sans', sans-serif;
+        margin: 1em;
+    }
+    
+    .PedidoCard {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 3fr 4fr);
+        grid-template-areas:
+            "item-1 item-7"
+            "item-2 item-8"
+            "item-3 item-9"
+            "item-4 item-10"
+            "item-5 item-11"
+            "item-6 item-12"
+        ;
+
+        background-color: #3C373D;
+        border-radius: 2rem;
+        padding: 2rem;
+        .FieldTitle {
+            color: #fff;
+            font-weight: 300;
+            font-size: 1rem;
+            font-family: 'Open Sans', sans-serif;
+            align-self: end;
+        }
+        .Field {
+            color: #fff;
+            font-weight: 400;
+            font-size: 2.6rem;
+            font-family: 'Open Sans', sans-serif;
+            margin: 0 2rem;
+        }
+
+        option {
+            font-size: 0.25em;
+        }
+
+        & :nth-child(1) {
+            grid-area: item-1
+        }
+        
+        & :nth-child(2) {
+            grid-area: item-2
+        }
+        
+        & :nth-child(3) {
+            grid-area: item-3
+        }
+        
+        & :nth-child(4) {
+            grid-area: item-4
+        }
+        
+        & :nth-child(5) {
+            grid-area: item-5
+        }
+        
+        & :nth-child(6) {
+            grid-area: item-6
+        }
+        
+        & :nth-child(7) {
+            grid-area: item-7
+        }
+        
+        & :nth-child(8) {
+            background-color: #646E78;
+            color: #fff;
+            border: hidden;
+            grid-area: item-8;
+        }
+        
+        & :nth-child(9) {
+            grid-area: item-9
+        }
+        
+        & :nth-child(10) {
+            grid-area: item-10
+        }
+        
+        & :nth-child(11) {
+            grid-area: item-11
+        }
+        
+        & :nth-child(12) {
+            grid-area: item-12
+        }
+    }
+}
+
+
+@media (max-height: 1000px) {
+    .Pedido {
+        .PedidoCard {
+            grid-template-areas:
+            "item-1 item-2"
+            "item-3 item-4"
+            "item-5 item-6"
+            "item-7 item-8"
+            "item-9 item-10"
+            "item-11 item-12"
+            ;
+            flex-direction: column;
+            
+            .FieldTitle {
+                align-self: start;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 2400px) {
+    .Pedido {
+        .PedidoCard {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 3fr 4fr);
+            grid-template-areas:
+            "item-1 item-5 item-9"
+            "item-2 item-6 item-10"
+            "item-3 item-7 item-11"
+            "item-4 item-8 item-12"
+            ;
+            
+            .FieldTitle {
+                align-self: start;
+            }
+        }
+    }
+}
